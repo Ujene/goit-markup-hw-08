@@ -1,0 +1,103 @@
+//Header Contacts
+
+.contacts-link {
+	display: flex;
+	align-items: center;
+	color: var(--main-text-color);
+	text-decoration: none;
+	font-weight: 500;
+	padding: 32px 0;
+
+	transition-property: color, fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus,
+&:hover {
+	color: var(--link-color);
+	fill: var(--link-color);
+}
+
+&:hover .icon-mail,
+&:focus .icon-mail {
+	color: var(--link-color);
+	fill: var(--link-color);
+}
+
+&:hover .icon-smartphone,
+&:focus .icon-smartphone {
+	color: var(--link-color);
+	fill: var(--link-color);
+}
+}
+
+.contacts-group {
+	display: flex;
+	margin-left: auto;
+}
+
+.contacts-list:not(:last-child) {
+	margin-right: 30px;
+}
+
+.icon-mail {
+	fill: #757575;
+	margin-right: 10px;
+	width: 16px;
+	height: 12px;
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-smartphone {
+	fill: #757575;
+	margin-right: 10px;
+	width: 10px;
+	height: 16px;
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Footer Contacts
+
+.footer-contacts {
+	color: rgba(255, 255, 255, 0.6);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus,
+		&:hover {
+			color: var(--link-color);
+		}
+}
+
+.footer-address {
+	padding-inline-start: unset;
+}
+
+//Footer Address Styles
+
+/* Address styles */
+
+.address {
+	color: var(--secondary-color);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+}
+
+.div-address {
+	margin-right: 70px;
+}
