@@ -1,0 +1,21 @@
+.footer-bg {
+	background-color: var(--ftr-background-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	& .container {
+			display: flex;
+			align-items: baseline;
+		}
+}
+
+
+
+.join-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+}

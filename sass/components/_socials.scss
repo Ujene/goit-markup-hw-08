@@ -1,0 +1,75 @@
+// Our Team Section
+
+.social-list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social-media-icon {
+	width: 20px;
+	height: 20px;
+	fill: #afb1b8;
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+&:focus {
+	background-color: #2196f3;
+}
+
+&:hover .social-media-icon,
+&:focus .social-media-icon {
+	fill: #fff;
+}
+}
+
+// Footer Section
+
+.footer-social-list {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 20px;
+	gap: 10px;
+}
+
+.footer-social-media-icon {
+	width: 20px;
+	height: 20px;
+	fill: #ffffff;
+}
+
+.footer-social-media-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+&:focus {
+	background-color: var(--link-color);
+}
+}
+
