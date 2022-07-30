@@ -21,12 +21,11 @@
       referrerpolicy="no-referrer"
     />
     <!-- Custom styles -->
-	 <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-	 
   </head>
 
-  <body>
+  <body data-body>
     <!-- Header section -->
     <header class="header">
       <div class="container header-flex">
@@ -63,12 +62,24 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40" class="menu-button-icon">
+            <use
+              href="./images/ico/icons.svg#icon-burger"
+              class="menu-button-icon-burger"
+            ></use>
+            <use
+              href="./images/ico/icons.svg#icon-cross-mobile"
+              class="menu-button-icon-cross"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main section-->
     <main>
       <!-- Title BEM -->
-      <section class="hero overlay">
+      <!-- <section class="hero overlay">
         <div class="container hero-flex">
           <h1 class="hero-title">
             Эффективные решения <br />
@@ -78,13 +89,13 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Features BEM -->
       <section class="features paddings">
         <div class="container">
           <h2 hidden>Преимущества</h2>
-          <ul class="features__group">
-            <li class="features__pstn">
+          <ul class="features__group grid-set">
+            <li class="features__pstn grid-set-item">
               <div class="features-box">
                 <svg class="features-box__icon">
                   <use href="./images/ico/icons.svg#icon-antenna"></use>
@@ -96,7 +107,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="features__pstn">
+            <li class="features__pstn grid-set-item">
               <div class="features-box">
                 <svg class="features-box__icon">
                   <use href="./images/ico/icons.svg#icon-clock"></use>
@@ -108,7 +119,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features__pstn">
+            <li class="features__pstn grid-set-item">
               <div class="features-box">
                 <svg class="features-box__icon">
                   <use href="./images/ico/icons.svg#icon-diagram"></use>
@@ -120,7 +131,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="features__pstn">
+            <li class="features__pstn grid-set-item">
               <div class="features-box">
                 <svg class="features-box__icon">
                   <use href="./images/ico/icons.svg#icon-astronaut"></use>
@@ -138,7 +149,7 @@
       <!-- What we do BEM -->
       <section class="projects paddings">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="project-title">Чем мы занимаемся</h2>
           <ul class="grid-set list-pad">
             <li class="grid-set-item itms-list">
               <img
@@ -412,7 +423,7 @@
       <!-- Clients Section BEM -->
       <section class="paddings">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list grid-set">
             <li class="grid-set-item">
               <a class="clients-list__link">
@@ -462,23 +473,23 @@
     </main>
     <!-- Footer section -->
     <footer class="footer-bg">
-      <div class="container">
+      <div class="container footer-bg__container">
         <div class="div-address">
           <a class="footer-logo" href="./index.html"
             ><span class="footer-web-logo">Web</span>Studio</a
           >
           <ul class="footer-address">
-            <li>
+            <li class="footer-address-item">
               <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
             </li>
-            <li>
+            <li class="footer-address-item">
               <p>
                 <a class="footer-contacts" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </p>
             </li>
-            <li>
+            <li class="footer-address-item">
               <p>
                 <a class="footer-contacts" href="tel:+380961111111"
                   >+38 096 111 11 11</a
@@ -627,6 +638,57 @@
         </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <!-- Mobile Menu section -->
+    <div class="mobile-menu" data-menu>
+		<div class="mobile-menu-thumb">
+			<nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-list__item">
+            <a href="./index.html" class="mobile-nav-list__link">Студия</a>
+          </li>
+          <li class="mobile-nav-list__item">
+            <a href="./portfolio.html" class="mobile-nav-list__link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-nav-list__item">
+            <a href="#" class="mobile-nav-list__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a
+            href="tel: +380961111111"
+            class="mobile-contacts__link mobile-contacts__link--tel"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-contacts__link mobile-contacts__link--mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="#" class="mobile-socials__link" aria-label="Instagram">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="#" class="mobile-socials__link" aria-label="Twitter">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="#" class="mobile-socials__link" aria-label="Facebook">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="#" class="mobile-socials__link" aria-label="LinkedIn">LinkedIn</a>
+        </li>
+      </ul
+		</div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

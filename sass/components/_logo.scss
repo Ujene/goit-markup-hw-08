@@ -1,41 +1,38 @@
 .logo {
-	color: #000000;
-	font-family: "Raleway", sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
-	text-decoration: none;
-	margin-right: 93px;
-	padding-top: 24px;
-	padding-bottom: 25px;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: 88px;
+  }
 }
 
 .web-logo {
-	color: var(--link-color);
+  color: var(--link-color);
 }
 
 //Footer Logo Styles
 
 .footer-logo {
-	color: var(--secondary-color);
-	font-family: "Raleway", sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
-	text-decoration: none;
-	padding-top: 60px;
+  display: inline-block;
+  color: var(--secondary-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .footer-web-logo {
-	display: inline-block;
-	color: var(--link-color);
-	font-family: "Raleway", sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
-	letter-spacing: 0.03em;
-	margin-bottom: 20px;
+  color: var(--link-color);
 }

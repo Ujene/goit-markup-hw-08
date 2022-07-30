@@ -1,40 +1,45 @@
-.section-title {
-	color: var(--h-color);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.2;
-	text-align: center;
-	letter-spacing: 0.03em;
-	margin-bottom: 50px;
+.projects {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.project-title {
+  @extend %section-title;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .list-pad {
-	padding-inline-start: unset;
+  padding-inline-start: unset;
 }
 
 .itms-list {
-	position: relative;
+  position: relative;
 }
 
 .projects__overlay {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 70px;
-	width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 370px;
 
-	position: absolute;
-	bottom: 0;
-	left: calc(50% - 185px);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 185px);
 
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
-	text-align: center;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 
-	background: rgba(47, 48, 58, 0.8);
+  background: rgba(47, 48, 58, 0.8);
 }

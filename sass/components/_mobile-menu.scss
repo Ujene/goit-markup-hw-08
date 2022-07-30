@@ -1,0 +1,141 @@
+// Mobile Menu Button Styles
+
+.menu-button {
+  position: relative;
+  z-index: 10;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button-icon {
+  &:hover,
+  &:focus {
+    fill: var(--link-color);
+  }
+}
+
+.menu-button-icon-burger {
+  opacity: 1;
+
+  .menu-button.is-open & {
+    opacity: 0;
+  }
+}
+
+.menu-button-icon-cross {
+  opacity: 0;
+
+  .menu-button.is-open & {
+    opacity: 1;
+  }
+}
+
+// Menu Form
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+
+  transition: transform 500ms;
+
+  &.is-open {
+    transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu-thumb {
+  padding: 48px 40px;
+}
+
+// Mobile Menu Items Styles
+
+.mobile-nav {
+  margin-bottom: 302px;
+}
+
+.mobile-nav-list__item {
+  &:not(:first-child) {
+    padding-top: 16px;
+  }
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
+}
+
+.mobile-nav-list__link {
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+
+  &--tel {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+
+  &--mail {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: #757575;
+  }
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 64px;
+}
+
+.mobile-socials__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #2196f3;
+}

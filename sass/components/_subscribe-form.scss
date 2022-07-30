@@ -1,16 +1,37 @@
 .subscribe {
-	margin-left: auto;
+	margin-top: 60px;
+
+@media screen and (min-width: 768px){
+	width: 450px;
+	margin-top: 0;
+}
+
+	@media screen and (min-width: 1200px) {
+		margin-left: auto;
+		width: 570px;
+		
+	}
 
 	&-form {
 			display: flex;
+			flex-direction: column;
 			margin-top: 20px;
+			gap:20px;
+			align-items: center;
+			width: 100%;
+
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+		
+	}
 		}
 }
 
 
 
 .subscribe-input {
-	width: 358px;
+	max-width: 450px;
+	width: 100%;
 	height: 50px;
 	padding: 15px 16px;
 	font-weight: 400;
@@ -30,6 +51,11 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+	@media screen and (min-width: 1200px) {
+		max-width: 358px;
+		
+	}
+
 	&:hover,
 		&:focus {
 			outline: 1px solid var(--link-color);
@@ -39,11 +65,11 @@
 
 
 .subscribe-button {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	padding: 10px 28px;
-	margin-left: 12px;
-	min-width: 200px;
+	min-width: 180px;
+	max-width: 200px;
 
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
