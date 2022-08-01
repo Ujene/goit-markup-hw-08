@@ -1,6 +1,10 @@
 .hero {
   background-color: var(--ftr-background-color);
-  padding: 200px 0;
+  padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
 
 .hero-flex {
@@ -10,7 +14,7 @@
 }
 
 .overlay {
-  height: 600px;
+  max-height: 600px;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;

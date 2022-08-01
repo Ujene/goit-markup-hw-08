@@ -458,6 +458,7 @@ img {
 }
 
 .menu-button-icon-cross {
+  position: fixed;
   opacity: 0;
 }
 .menu-button.is-open .menu-button-icon-cross {
@@ -468,9 +469,11 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  overflow: hidden;
   background-color: var(--secondary-color);
   width: 100%;
   height: 100%;
+  padding: 48px 40px;
   -webkit-transform: translateY(-120%);
           transform: translateY(-120%);
   -webkit-transition: -webkit-transform 500ms;
@@ -489,7 +492,7 @@ img {
 }
 
 .mobile-menu-thumb {
-  padding: 48px 40px;
+  position: relative;
 }
 
 .mobile-nav-list__item:not(:first-child) {
@@ -515,6 +518,8 @@ img {
 }
 
 .mobile-contacts {
+  position: fixed;
+  bottom: 134px;
   margin-top: 302px;
 }
 
@@ -543,6 +548,8 @@ img {
 }
 
 .mobile-socials {
+  position: fixed;
+  bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1217,7 +1224,12 @@ img {
 
 .hero {
   background-color: var(--ftr-background-color);
-  padding: 200px 0;
+  padding: 118px 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero-flex {
@@ -1234,7 +1246,7 @@ img {
 }
 
 .overlay {
-  height: 600px;
+  max-height: 600px;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1368,8 +1380,14 @@ img {
 }
 
 .paddings {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .paddings {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list-name {

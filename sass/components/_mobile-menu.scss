@@ -28,6 +28,7 @@
 }
 
 .menu-button-icon-cross {
+  position: fixed;
   opacity: 0;
 
   .menu-button.is-open & {
@@ -41,9 +42,11 @@
   position: fixed;
   top: 0;
   left: 0;
+  overflow: hidden;
   background-color: var(--secondary-color);
   width: 100%;
   height: 100%;
+  padding: 48px 40px;
   transform: translateY(-120%);
 
   transition: transform 500ms;
@@ -58,7 +61,7 @@
 }
 
 .mobile-menu-thumb {
-  padding: 48px 40px;
+  position: relative;
 }
 
 // Mobile Menu Items Styles
@@ -94,6 +97,8 @@
 }
 
 .mobile-contacts {
+  position: fixed;
+  bottom: 134px;
   margin-top: 302px;
 }
 
@@ -125,6 +130,8 @@
 }
 
 .mobile-socials {
+  position: fixed;
+  bottom: 48px;
   display: flex;
   gap: 20px;
   align-items: center;
